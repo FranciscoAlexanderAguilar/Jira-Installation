@@ -1,4 +1,4 @@
-If is a fresh ubuntu installation check for $JAVA_HOME is set.
+On ubuntu check if $JAVA_HOME is set.
 
 $ echo $JAVA_HOME
 
