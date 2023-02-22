@@ -7,3 +7,5 @@ Also I will integrate it with MySQL.
 
 Here is the atlassian documentation for reference
 https://confluence.atlassian.com/adminjiraserver/installing-jira-applications-on-linux-from-archive-file-938846844.html
+
+Before Install Jira proceed and Install MySQL.
