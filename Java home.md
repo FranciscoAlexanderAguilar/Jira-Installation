@@ -57,5 +57,5 @@ $ echo $JAVA_HOME
 the output will be the same as the first time we tried. That is because we need to restart ubuntu.
 and after restarting ubuntu we can run the echo $JAVA_HOME and the output should be like:
 
-/usr/lib/jvm/java-1.17.0-openjdk-amd
+/usr/lib/jvm/java-1.17.0-openjdk-amd 
 
