@@ -16,5 +16,3 @@ useradd: command to create a new user.
 --comment "user for Jira": This option adds a comment to the user account. The comment is a brief description of the account's purpose.
 
 --shell /bin/bash: This option specifies the login shell for the new user.
-
-
