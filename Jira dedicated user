@@ -1,0 +1,20 @@
+To install jira, Atlassian recommend running Jira as a dedicated user 
+and is advised to do it before start the installation of Jira.
+
+run the following command:
+
+$ sudo useradd --create-home --comment "user for Jira" --shell /bin/bash jira
+
+                                         explanation of the commands executed above:
+
+sudo: This is a command that allows a user with administrative privileges to execute a command as another user or as the root user.
+
+useradd: command to create a new user.
+
+--create-home: This option creates a home directory for the new user. The home directory is a place where the user can store files and settings.
+
+--comment "user for Jira": This option adds a comment to the user account. The comment is a brief description of the account's purpose.
+
+--shell /bin/bash: This option specifies the login shell for the new user.
+
+This text is <font color="red">red</font> and this text is <font color="blue">blue</font>
