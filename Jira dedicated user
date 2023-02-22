@@ -17,4 +17,4 @@ useradd: command to create a new user.
 
 --shell /bin/bash: This option specifies the login shell for the new user.
 
-This text is <font color="red">red</font> and this text is <font color="blue">blue</font>
+
