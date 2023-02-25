@@ -20,7 +20,7 @@ so this is a better query:
 
 CREATE USER 'jirauser'@'localhost or IP' IDENTIFIED BY 'YOUR_PASSWORD_HERE';
 
-Take into account that VALIDATE PASSWORD COMPONENT is enabled (in case yu don't remember wen ran mysql_secure_installation)
+Take into account that VALIDATE PASSWORD COMPONENT is enabled (in case you don't remember we ran mysql_secure_installation)
 to test the strength of passwords if the password is weak an error will let us know if our password pass the test or not
 
 
@@ -48,6 +48,19 @@ Ok lets continue, now set the permission to connect to the database, and permiss
 with the SQL query:
 
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,REFERENCES,ALTER,INDEX on jiradb.* TO 'jirauserdb'@'localhost or IP';
+
+Its time to edit the file my.cnf that is usually located at /etc/mysql in my case i will use vi.
+
+$ sudo vi my.cnf
+
+![image](https://user-images.githubusercontent.com/45543969/221380948-668e6114-8add-4f5d-b3ae-f4bf85e9a30d.png)
+
+Set the default storage engine to InnoDB: character_set_server=utf8mb4
+Specify the character set used by the database server: character_set_server=utf8mb4
+Set the default row format to DYNAMIC: innodb_default_row_format=DYNAMIC
+Specify the value of innodb_log_file_size to be at least 2G: innodb_log_file_size=2G
+
+Save the changes and lets work with the JDBC driver(conector).
 
 
 
