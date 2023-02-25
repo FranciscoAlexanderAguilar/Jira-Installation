@@ -9,9 +9,10 @@ notice how we can run it now with no issues.
 ![image](https://user-images.githubusercontent.com/45543969/221036704-0e632aee-ef28-4f0d-a802-40413b2db92d.png)
 
 Thinking about security here, when creating a user is a good practice to specify the host from where the user will connect.
-with the SQL query 
+with the following SQL query:
 
 CREATE USER 'username' IDENTIFIED BY 'YOUR_PASSWORD_HERE'; 
+
 it will do the job, but if only use 'username' a wild card will be use and is generally considered bad security practice
 because it allows anyone from any IP address to connect to the MySQL server, as long as they provide valid credentials.
 This can make your MySQL server vulnerable to various types of attacks, including brute-force attacks and SQL injection attacks.
