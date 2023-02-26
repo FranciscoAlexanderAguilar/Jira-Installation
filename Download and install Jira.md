@@ -7,7 +7,7 @@ $ sudo wget https://product-downloads.atlassian.com/software/jira/downloads/atla
 
 ![image](https://user-images.githubusercontent.com/45543969/221382403-959705b4-7d5d-41c1-aba5-33e88e6d53e4.png)
 
-Now let's create the installation directory to install jira in /opt/ 
+<h3>Now let's create the installation directory to install jira in /opt/</h3>
 
 $  sudo mkdir jirasoftware
 
@@ -40,6 +40,22 @@ that are being granted to the owner, which in this case are read, write, and exe
 go-rwx: The go specifies the permissions being granted to the group and others. -rwx specifies 
 the permissions that are being removed from the group and others, which in this case are read,
 write, and execute.
+
+<h3>Create the home directory</h3>
+
+This directory should be separate to your installation directory
+
+![image](https://user-images.githubusercontent.com/45543969/221395531-e76b37cc-34b5-4c80-88ff-345f34062dc5.png)
+
+Give the Jira user read, write and execute permissions to the jira-home directory.
+
+chown -R jira jira-home
+chmod -R u=rwx,go-rwx jira-home
+
+![image](https://user-images.githubusercontent.com/45543969/221395666-f69182e3-f680-4c86-af1a-9f7b8d2fb66b.png)
+
+
+
 
 
 
