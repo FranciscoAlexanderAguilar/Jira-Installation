@@ -60,6 +60,41 @@ use any editor you prefer and edit:
 
 $ nano /opt/jirasoftware/atlassian-jira-software-9.6.0-standalone/atlassian-jira/WEB-INF/classes/jira-application.properties
 
+and add the followwing:
+
+/opt/to_home_directory
+
+![image](https://user-images.githubusercontent.com/45543969/221651519-638eb597-c4de-4cae-8984-772c19794d28.png)
+
+
+<h3>Check the ports /opt/</h3>
+
+By default Jira listens on port 8080. if you have port 8080 in use by another aplication you will need to change that
+and tell jira to listen in another port. Since this is just a demostration I will leave the default ports, but if 
+you need to change it  do the following:
+
+$ nano /opt/jirasoftware/atlassian-jira-software-9.6.0-standalone/conf/server.xml
+
+and change accordingly as you need. follow the example on the picture bellow.
+
+![image](https://user-images.githubusercontent.com/45543969/221662658-1af50c02-8424-498f-86cc-f606208c86b7.png)
+
+<h3>Time to start Jira</h3>
+
+Since i did this on ubuntu run the the commands:
+
+$ cd /opt/jirasoftware/atlassian-jira-software-9.6.0-standalone/bin
+jira@alex-ubuntu:/opt/jirasoftware/atlassian-jira-software-9.6.0-standalone/bin$ ./start-jira.sh
+
+If you see the following screen means that you successfully run Jira.
+
+![image](https://user-images.githubusercontent.com/45543969/221676675-76a410b2-75f8-41a4-a2a5-79df9183e19d.png)
+
+Now just go to to http://localhost:8080/ (or the port you have selected) and launch Jira.
+
+
+
+
 
 
 
