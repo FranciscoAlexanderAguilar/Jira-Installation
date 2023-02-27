@@ -90,16 +90,9 @@ If you see the following screen means that you successfully run Jira.
 
 ![image](https://user-images.githubusercontent.com/45543969/221676675-76a410b2-75f8-41a4-a2a5-79df9183e19d.png)
 
-Now just go to to http://localhost:8080/ (or the port you have selected) and launch Jira.
+Now just go to to http://localhost:8080/ (or the port you have selected) and launch Jira. and if you see the next screen
+congratulations you are ready to setup your jira app.
 
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/45543969/221678222-7e4c1279-01b7-4ebe-b2c6-8e7143890e11.png)
 
 
