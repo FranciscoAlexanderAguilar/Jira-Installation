@@ -54,6 +54,12 @@ chmod -R u=rwx,go-rwx jira-home
 
 ![image](https://user-images.githubusercontent.com/45543969/221395666-f69182e3-f680-4c86-af1a-9f7b8d2fb66b.png)
 
+Lets tell Jira where to find your jira-home directory when it starts up
+
+use any editor you prefer and edit:
+
+$ nano /opt/jirasoftware/atlassian-jira-software-9.6.0-standalone/atlassian-jira/WEB-INF/classes/jira-application.properties
+
 
 
 
